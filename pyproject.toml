@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minifier"
+version = "1.0.0"
+description = "A Python tool for minifying web assets."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Miles Barr" }
+]
+dependencies = [
+    "beautifulsoup4"
+]
+keywords = ["css", "svg", "html", "website", "json", "xml", "minify",
+    "web-app-manifest", "xhtml", "minification", "minifier"]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+minifier = "minifier.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/milesbarr/minifier"
+
+[tool.setuptools]
+packages = ["minifier"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
