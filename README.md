@@ -18,8 +18,8 @@ All minification preserves full functionality while reducing file size.
 
 ```bash
 # Clone the repository
-git clone https://github.com/milesbarr/minifier.git
-cd minifier
+git clone https://github.com/milesbarr/web-minifier.git
+cd web-minifier
 
 # Install the package
 pip install .

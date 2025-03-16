@@ -6,7 +6,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "minifier"
+name = "web-minifier"
 version = "1.0.0"
 description = "A Python tool for minifying web assets."
 readme = "README.md"
@@ -18,8 +18,21 @@ authors = [
 dependencies = [
     "beautifulsoup4"
 ]
-keywords = ["css", "svg", "html", "website", "json", "xml", "minify",
-    "web-app-manifest", "xhtml", "minification", "minifier"]
+keywords = [
+    "css",
+    "html",
+    "json",
+    "minification",
+    "minifier",
+    "minify",
+    "svg",
+    "web-app-manifest",
+    "web",
+    "website",
+    "website",
+    "xhtml",
+    "xml"
+]
 
 classifiers = [
     "Intended Audience :: Developers",
@@ -33,7 +46,7 @@ classifiers = [
 minifier = "minifier.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/milesbarr/minifier"
+Homepage = "https://github.com/milesbarr/web-minifier"
 
 [tool.setuptools]
 packages = ["minifier"]
