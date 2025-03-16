@@ -36,7 +36,7 @@ python -m webminifier -i input.html -o output.html
 
 Minify all supported files in a directory:
 ```bash
-python -m miwebminifiernifier -i src/ -o dist/
+python -m webminifier -i src/ -o dist/
 ```
 
 Recursively minify files in a directory and its subdirectories:
