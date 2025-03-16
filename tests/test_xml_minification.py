@@ -1,5 +1,6 @@
-from minifier import minify_xml
 import unittest
+
+from webminifier import minify_xml
 
 
 class TestXMLMinification(unittest.TestCase):
@@ -16,7 +17,10 @@ class TestXMLMinification(unittest.TestCase):
             <!-- Another comment -->
         </root>
         """
-        expected_xml = '<?xml version="1.0" ?><root><child>Text with unnecessary spaces</child><child>More text</child></root>'
+        expected_xml = (
+            '<?xml version="1.0" ?><root><child>Text with unnecessary spaces</'
+            "child><child>More text</child></root>"
+        )
         self.assertEqual(minify_xml(original_xml), expected_xml)
 
 

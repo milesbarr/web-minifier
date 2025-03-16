@@ -31,17 +31,17 @@ pip install .
 
 Minify a single file:
 ```bash
-python -m minifier -i input.html -o output.html
+python -m webminifier -i input.html -o output.html
 ```
 
 Minify all supported files in a directory:
 ```bash
-python -m minifier -i src/ -o dist/
+python -m miwebminifiernifier -i src/ -o dist/
 ```
 
 Recursively minify files in a directory and its subdirectories:
 ```bash
-python -m minifier -i src/ -o dist/ -r
+python -m webminifier -i src/ -o dist/ -r
 ```
 
 ## License

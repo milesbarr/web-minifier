@@ -43,13 +43,13 @@ classifiers = [
 ]
 
 [project.scripts]
-minifier = "minifier.__main__:main"
+webminifier = "webminifier.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/milesbarr/web-minifier"
 
 [tool.setuptools]
-packages = ["minifier"]
+packages = ["webminifier"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

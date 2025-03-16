@@ -1,27 +1,16 @@
-from bs4 import BeautifulSoup, Comment
 import re
 
-from .css import minify_css
-from .json import minify_json
+from bs4 import BeautifulSoup, Comment
+
+from webminifier.css import minify_css
+from webminifier.json import minify_json
 
 
 def minify_html(html: str) -> str:
-    """
-    Minifies HTML.
-
-    This function removes unnecessary whitespace, comments, and trailing
-    slashes on void elements. It also minifies inline CSS and JSON-LD.
-
-    Args:
-        html (str): A string containing the HTML content.
-
-    Returns:
-        str: Minified HTML content.
-    """
     soup = BeautifulSoup(html, "html.parser")
 
     # Remove comments.
-    for comment in soup.findAll(string=lambda s: isinstance(s, Comment)):
+    for comment in soup.find_all(string=lambda s: isinstance(s, Comment)):
         comment.extract()
 
     # Minify CSS within style tags.

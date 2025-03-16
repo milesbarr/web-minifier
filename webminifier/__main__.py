@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from . import minify_file, minify_dir
+from webminifier import minify_file, minify_dir
 
 
 def main() -> None:
