@@ -1,4 +1,4 @@
-# Minifier
+# Web Minifier
 
 A Python tool for minifying web assets by removing unnecessary whitespace,
 comments, and other redundant content while preserving functionality.
